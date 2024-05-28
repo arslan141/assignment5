@@ -1,0 +1,54 @@
+a) Convert the String into Upper Case
+
+javascript
+Copy code
+function toUpperCase(S) {
+    return S.toUpperCase();
+}
+console.log(toUpperCase("hello")); // Output: HELLO
+b) Convert Only the First Character to Uppercase
+
+javascript
+Copy code
+function capitalizeFirstChar(S) {
+    return S.charAt(0).toUpperCase() + S.slice(1);
+}
+console.log(capitalizeFirstChar("hello")); // Output: Hello
+c) Convert the String into Lower Case
+
+javascript
+Copy code
+function toLowerCase(S) {
+    return S.toLowerCase();
+}
+console.log(toLowerCase("HELLO")); // Output: hello
+d) Break the String into Two Halves and Swap Them
+
+javascript
+Copy code
+function swapHalves(S) {
+    let mid = Math.floor(S.length / 2);
+    return S.slice(mid) + S.slice(0, mid);
+}
+console.log(swapHalves("HelloWorld")); // Output: WorldHello
+e) Count the Repeating Characters
+
+javascript
+Copy code
+function countRepeatingChars(S) {
+    let charCount = {};
+    for (let char of S) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+    return charCount;
+}
+console.log(countRepeatingChars("hello")); 
+// Output: {h: 1, e: 1, l: 2, o: 1}
+f) Reverse the String
+
+javascript
+Copy code
+function reverseString(S) {
+    return S.split('').reverse().join('');
+}
+console.log(reverseString("hello")); // Output: olleh
